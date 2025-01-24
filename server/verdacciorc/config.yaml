@@ -7,9 +7,6 @@ uplinks:
   npmjs:
     url: https://registry.npmjs.org/
 packages:
-  '@lds/*':
-    access: lds-wly
-    publish: lds-wly
   '**':
     proxy: npmjs
     access: $all

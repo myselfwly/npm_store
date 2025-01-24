@@ -6,10 +6,5 @@
     {
         "name": "guest",
         "description": "访客组"
-    },
-    {
-        "name": "lds",
-        "description": "lds组",
-        "created_at": "2024-01-23"
     }
 ]

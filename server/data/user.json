@@ -1,8 +1,8 @@
 [
   {
-    "username": "lds-wly",
+    "username": "admin",
     "groups": [
-      "lds",
+      "developer",
       "guest"
     ]
   }
