@@ -1,0 +1,41 @@
+{
+  "name": "verdaccio-project",
+  "version": "1.0.0",
+  "private": true,
+  "scripts": {
+    "start": "pm2 start ./ecosystem.config.cjs && pm2 save",
+    "dev": "nodemon index.js"
+  },
+  "devDependencies": {
+    "nodemon": "^3.0.2",
+    "pkg": "^5.8.1"
+  },
+  "dependencies": {
+    "cors": "^2.8.5",
+    "express": "^4.18.2",
+    "js-yaml": "^4.1.0",
+    "verdaccio": "^6.0.5"
+  },
+  "bin": "index.js",
+  "pkg": {
+    "assets": [
+      "static/**/*",
+      "verdacciorc/**/*",
+      "control/**/*",
+      "lib/**/*",
+      "api/**/*"
+    ],
+    "targets": ["node18-win-x64"]
+  },
+  "nodemonConfig": {
+    "ignore": [
+      "verdacciorc/*",
+      "data/*",
+      "static/*",
+      "verdacciorc/doc/*",
+      "node_modules/*"
+    ],
+    "delay": "1000",
+    "ext": "js,json,yaml"
+  }
+}

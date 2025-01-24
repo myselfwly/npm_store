@@ -1,0 +1,16 @@
+[
+  {
+    "name": "**",
+    "proxy": "npmjs"
+  },
+  {
+    "name": "@lds/*",
+    "access": [
+      "lds"
+    ],
+    "publish": [
+      "lds"
+    ],
+    "proxy": ""
+  }
+]

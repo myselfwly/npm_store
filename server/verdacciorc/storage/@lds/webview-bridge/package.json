@@ -1,0 +1,86 @@
+{
+	"name": "@lds/webview-bridge",
+	"versions": {
+		"1.0.5": {
+			"version": "1.0.5",
+			"description": "webview-bridge 用于前端跟客户端通信的桥接库",
+			"license": "MIT",
+			"main": "dist/index.js",
+			"module": "dist/webview-bridge.esm.js",
+			"typings": "dist/index.d.ts",
+			"files": [
+				"dist",
+				"src"
+			],
+			"sideEffects": false,
+			"engines": {
+				"node": ">=12"
+			},
+			"scripts": {
+				"start": "tsdx watch",
+				"build": "tsdx build --target browser --format cjs,esm,umd",
+				"upload": "lop upload",
+				"rule-test": "lop test",
+				"test": "tsdx test",
+				"lint": "tsdx lint src",
+				"prepare": "yarn build"
+			},
+			"name": "@lds/webview-bridge",
+			"author": {
+				"name": "lds-pc"
+			},
+			"repository": {
+				"type": "git",
+				"url": "git@codeup.aliyun.com:master/lib_common/front_end/webview-bridge.git"
+			},
+			"dependencies": {
+				"nanoid": "^3.3.4"
+			},
+			"devDependencies": {
+				"@lds/upload": "^1.3.2",
+				"tsdx": "^0.14.1",
+				"tslib": "^2.4.0",
+				"typescript": "^4.7.2"
+			},
+			"browserslist": {
+				"production": [
+					"chrome >= 49"
+				],
+				"development": [
+					"chrome >= 49"
+				]
+			},
+			"_id": "@lds/webview-bridge@1.0.5",
+			"readmeFilename": "README.md",
+			"gitHead": "6ad66eb59f035f76d73e9e959f73574602171f27",
+			"_nodeVersion": "18.20.5",
+			"_npmVersion": "10.8.2",
+			"dist": {
+				"integrity": "sha512-qQB4wKYOhG7OsIhH4Abu+R/2hl1pYRNURhaZ44aA0lS9U87djrx/rV5717+GLt0m0o7XMIw5oVWIpBuIdTSbbw==",
+				"shasum": "7b7c70e444af7ea1e8d8c485e07345af2fbbde4e",
+				"tarball": "http://192.168.10.51:4000/@lds/webview-bridge/-/@lds/webview-bridge-1.0.5.tgz"
+			},
+			"contributors": []
+		}
+	},
+	"time": {
+		"modified": "2025-01-23T12:01:26.269Z",
+		"created": "2025-01-23T12:01:26.269Z",
+		"1.0.5": "2025-01-23T12:01:26.269Z"
+	},
+	"users": {},
+	"dist-tags": {
+		"latest": "1.0.5"
+	},
+	"_uplinks": {},
+	"_distfiles": {},
+	"_attachments": {
+		"webview-bridge-1.0.5.tgz": {
+			"shasum": "7b7c70e444af7ea1e8d8c485e07345af2fbbde4e",
+			"version": "1.0.5"
+		}
+	},
+	"_rev": "3-2e4b3fa54cd10b0f",
+	"_id": "@lds/webview-bridge",
+	"readme": "# webview-bridge\r\n\r\n该 lib 依赖 webview 环境，用于前端跟客户端通信\r\n\r\n[客户端文档](http://gitlab-inc.ludashi.com/fxd-md/webview-webinterface-v2020/blob/master/webinterface.md)\r\n\r\n**注意：** 有些客户端方法并没有在 `webview-bridge` 中实现\r\n\r\n## 安装\r\n\r\n### 安装（私有 NPM）\r\n\r\n```bash\r\nyarn add @lds/webview-bridge\r\n# 或者\r\n# npm install @lds/webview-bridge\r\n```\r\n\r\n## 兼容性\r\n\r\n因为客户端 `webview` 版本限制（Chrom 49），所以 `webview-bridge` 仅支持 `Chrome >= 49`\r\n\r\n## 使用\r\n\r\n### import 方式使用\r\n\r\n```js\r\nimport { WvGetBaseData, WvEventNotify } from '@lds/webview-bridge';\r\n\r\n// 调用客户端方法\r\nWvGetBaseData().then(res => {\r\n  console.log(res);\r\n});\r\n\r\n// 监听通知\r\nWvEventNotify((name: string, json: string) => {\r\n  if (name === 'MainWebWndCreated') {\r\n    console.log(json);\r\n  }\r\n});\r\n```\r\n\r\n### 使用 script 引入的方式\r\n\r\n```html\r\n<script src=\"./dist/webview-bridge.umd.production.min.js\"></script>\r\n<script>\r\n  const oBtn = document.getElementById('btn');\r\n  oBtn.addEventListener(\r\n    'click',\r\n    function() {\r\n      webviewBridge.WvCloseWnd();\r\n    },\r\n    false\r\n  );\r\n</script>\r\n```\r\n\r\n### 使用 script 引用 cdn 链接\r\n\r\n现在 `webview-bridge` 的打包文件已经上传到阿里云 OSS 上，目录为 `lds-file/web/webview_bridge/`。\r\n打包的时候使用的是 [@lds/upload](http://gitlab-inc.ludashi.com/fxd-utils/oss-upload) 进行在 gitlab-ci 环境上传。cdn 上 `webview-bridge` 是按照版本保存，主要为了防止因为代码覆盖导致其他项目发生线上 bug， 形如：`/webview_bridge/v1.12.0/**.min.js`。\r\n\r\n使用方式如下：\r\n\r\n```html\r\n<script src=\"https://cdn-file.ludashi.com/web/webview_bridge/v1.12.0/webview-bridge.umd.production.min.js\"></script>\r\n<script>\r\n  const oBtn = document.getElementById('btn');\r\n  oBtn.addEventListener(\r\n    'click',\r\n    function() {\r\n      webviewBridge.WvCloseWnd();\r\n    },\r\n    false\r\n  );\r\n</script>\r\n```\r\n\r\n## webview-bridge 开发流程\r\n\r\n任何功能的新增和 bug 的修复，都需要从 `master` 切换新的分支，在新的分支上开发或修复 bug，开发完成/修复完成再合并到 `master` 分支进行发布，**务必保证 `master` 分支的代码是最新的**。\r\n\r\n1. 拉取代码到本地\r\n2. 从 `master` 分支切换新的分支 `feat/xxxx` 或 `hotfix/xxxx` 等进行开发\r\n3. 开发完成/修复完成后在当前分支执行`版本更新`，详细操作见下面**版本更新**\r\n4. 将当前分支进行推送`git push --follow-tags`\r\n5. 在 gitlab 上发起 `merge request`，等待管理员合并\r\n\r\n## 版本更新\r\n\r\n建议使用 `yarn version xxx --message 'xxxx'` 的形式来进行版本的升级(附带自动 `git tag`)\r\n详细操作可查看: [yarn version](https://yarn.bootcss.com/docs/cli/version/) 文档\r\n\r\n```bash\r\nyarn version --major # 不兼容性更新（一般是进行比较大重构，许多api不能向下兼容） 如： 1.2.0 -> 2.0.0\r\nyarn version --minor # 功能性更新（一般是增加了新功能） 如：1.2.0 -> 1.3.0\r\nyarn version --patch # 修复性更新（一般是修复什么bug，或者一些小的改动） 如：1.2.0 -> 1.2.1\r\n```\r\n"
+}

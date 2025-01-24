@@ -1,0 +1,23 @@
+storage: C:\Users\lds\Verdaccio\server\verdacciorc\storage
+auth:
+  htpasswd:
+    file: C:\Users\lds\Verdaccio\server\verdacciorc\htpasswd
+    max_users: 2
+uplinks:
+  npmjs:
+    url: https://registry.npmjs.org/
+packages:
+  '@lds/*':
+    access: lds-wly
+    publish: lds-wly
+  '**':
+    proxy: npmjs
+    access: $all
+    publish: $all
+server:
+  keepAliveTimeout: 60
+listen: 0.0.0.0:4000
+log:
+  type: stdout
+  format: pretty
+  level: http

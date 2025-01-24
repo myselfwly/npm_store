@@ -1,0 +1,95 @@
+2025-01-24 15:43 +08:00: [36minfo [39m[37m[34m---[37m config file  - [32mC:\Users\lds\Verdaccio\server\verdacciorc\config.yaml[37m[39m
+2025-01-24 15:43 +08:00: [36minfo [39m[37m[34m---[37m the "crypt" algorithm is deprecated consider switch to "bcrypt" in the configuration file. Read the documentation for additional details[39m
+2025-01-24 15:43 +08:00: [36minfo [39m[37m[34m---[37m using htpasswd file: [32mC:\Users\lds\Verdaccio\server\verdacciorc\htpasswd[37m[39m
+2025-01-24 15:43 +08:00: [36minfo [39m[37m[34m---[37m plugin successfully loaded: [32mverdaccio[37m-[32mhtpasswd[37m[39m
+2025-01-24 15:43 +08:00: [33mwarn [39m[37m[34m---[37m http address - [32mhttp://0.0.0.0:4000/[37m - [32mverdaccio/6.0.5[37m[39m
+2025-01-24 18:56 +08:00: [36minfo [39m[37m[34m---[37m config file  - [32mC:\Users\lds\Verdaccio\server\verdacciorc\config.yaml[37m[39m
+2025-01-24 18:56 +08:00: [36minfo [39m[37m[34m---[37m the "crypt" algorithm is deprecated consider switch to "bcrypt" in the configuration file. Read the documentation for additional details[39m
+2025-01-24 18:56 +08:00: [36minfo [39m[37m[34m---[37m using htpasswd file: [32mC:\Users\lds\Verdaccio\server\verdacciorc\htpasswd[37m[39m
+2025-01-24 18:56 +08:00: [36minfo [39m[37m[34m---[37m plugin successfully loaded: [32mverdaccio[37m-[32mhtpasswd[37m[39m
+2025-01-24 18:56 +08:00: [33mwarn [39m[37m[34m---[37m http address - [32mhttp://0.0.0.0:4000/[37m - [32mverdaccio/6.0.5[37m[39m
+2025-01-24 18:56 +08:00: [36minfo [39m[37m[32m<--[37m [32m192.168.10.51[37m requested '[32mGET[37m [32m/[37m'[39m
+2025-01-24 18:56 +08:00: [35mhttp [39m[37m[32m<--[37m [33m304[37m, user: [1mnull[22m([32m192.168.10.51[37m), req: '[32mGET[37m [32m/[37m', bytes: [33m0[37m/[33m0[37m[39m
+2025-01-24 18:56 +08:00: [35mhttp [39m[37m[32m<--[37m [33m304[37m, user: [1mnull[22m([32m192.168.10.51[37m), req: '[32mGET[37m [32m/[37m', bytes: [33m0[37m/[33m0[37m[39m
+2025-01-24 18:56 +08:00: [36minfo [39m[37m[32m<--[37m [32m192.168.10.51[37m requested '[32mGET[37m [32m/-/static/runtime.7e9c6d0c00f48bce0de4.js[37m'[39m
+2025-01-24 18:56 +08:00: [35mhttp [39m[37m[32m<--[37m [33m200[37m, user: [1mnull[22m([32m192.168.10.51[37m), req: '[32mGET[37m [32m/-/static/runtime.7e9c6d0c00f48bce0de4.js[37m', bytes: [33m0[37m/[33m0[37m[39m
+2025-01-24 18:56 +08:00: [36minfo [39m[37m[32m<--[37m [32m192.168.10.51[37m requested '[32mGET[37m [32m/-/static/main.7e9c6d0c00f48bce0de4.js[37m'[39m
+2025-01-24 18:56 +08:00: [35mhttp [39m[37m[32m<--[37m [33m200[37m, user: [1mnull[22m([32m192.168.10.51[37m), req: '[32mGET[37m [32m/-/static/main.7e9c6d0c00f48bce0de4.js[37m', bytes: [33m0[37m/[33m0[37m[39m
+2025-01-24 18:56 +08:00: [36minfo [39m[37m[32m<--[37m [32m192.168.10.51[37m requested '[32mGET[37m [32m/-/static/vendors.7e9c6d0c00f48bce0de4.js[37m'[39m
+2025-01-24 18:56 +08:00: [35mhttp [39m[37m[32m<--[37m [33m200[37m, user: [1mnull[22m([32m192.168.10.51[37m), req: '[32mGET[37m [32m/-/static/vendors.7e9c6d0c00f48bce0de4.js[37m', bytes: [33m0[37m/[33m0[37m[39m
+2025-01-24 18:56 +08:00: [35mhttp [39m[37m[32m<--[37m [33m304[37m, user: [1mnull[22m([32m192.168.10.51[37m), req: '[32mGET[37m [32m/-/static/runtime.7e9c6d0c00f48bce0de4.js[37m', bytes: [33m0[37m/[33m0[37m[39m
+2025-01-24 18:56 +08:00: [35mhttp [39m[37m[32m<--[37m [33m304[37m, user: [1mnull[22m([32m192.168.10.51[37m), req: '[32mGET[37m [32m/-/static/main.7e9c6d0c00f48bce0de4.js[37m', bytes: [33m0[37m/[33m0[37m[39m
+2025-01-24 18:56 +08:00: [35mhttp [39m[37m[32m<--[37m [33m304[37m, user: [1mnull[22m([32m192.168.10.51[37m), req: '[32mGET[37m [32m/-/static/vendors.7e9c6d0c00f48bce0de4.js[37m', bytes: [33m0[37m/[33m0[37m[39m
+2025-01-24 18:56 +08:00: [36minfo [39m[37m[32m<--[37m [32m192.168.10.51[37m requested '[32mGET[37m [32m/-/static/Home.7e9c6d0c00f48bce0de4.js[37m'[39m
+2025-01-24 18:56 +08:00: [35mhttp [39m[37m[32m<--[37m [33m200[37m, user: [1mnull[22m([32m192.168.10.51[37m), req: '[32mGET[37m [32m/-/static/Home.7e9c6d0c00f48bce0de4.js[37m', bytes: [33m0[37m/[33m0[37m[39m
+2025-01-24 18:56 +08:00: [35mhttp [39m[37m[32m<--[37m [33m304[37m, user: [1mnull[22m([32m192.168.10.51[37m), req: '[32mGET[37m [32m/-/static/Home.7e9c6d0c00f48bce0de4.js[37m', bytes: [33m0[37m/[33m0[37m[39m
+2025-01-24 18:56 +08:00: [36minfo [39m[37m[32m<--[37m [32m192.168.10.51[37m requested '[32mGET[37m [32m/-/verdaccio/data/packages[37m'[39m
+2025-01-24 18:56 +08:00: [35mhttp [39m[37m[32m<--[37m [33m200[37m, user: [1mnull[22m([32m192.168.10.51[37m), req: '[32mGET[37m [32m/-/verdaccio/data/packages[37m', bytes: [33m0[37m/[33m0[37m[39m
+2025-01-24 18:56 +08:00: [36minfo [39m[37m[34m---[37m auth/allow_action: access granted to: [90mundefined[37m[39m
+2025-01-24 18:56 +08:00: [36minfo [39m[37m[34m---[37m allowed access for [32m@lds/cef-bridge[37m[39m
+2025-01-24 18:56 +08:00: [36minfo [39m[37m[34m---[37m auth/allow_action: access granted to: [90mundefined[37m[39m
+2025-01-24 18:56 +08:00: [36minfo [39m[37m[34m---[37m allowed access for [32m@lds/webview-bridge[37m[39m
+2025-01-24 18:56 +08:00: [35mhttp [39m[37m[32m<--[37m [33m304[37m, user: [1mnull[22m([32m192.168.10.51[37m), req: '[32mGET[37m [32m/-/verdaccio/data/packages[37m', bytes: [33m0[37m/[33m0[37m[39m
+2025-01-24 18:56 +08:00: [36minfo [39m[37m[32m<--[37m [32m192.168.10.51[37m requested '[32mGET[37m [32m/[37m'[39m
+2025-01-24 18:56 +08:00: [35mhttp [39m[37m[32m<--[37m [33m304[37m, user: [1mnull[22m([32m192.168.10.51[37m), req: '[32mGET[37m [32m/[37m', bytes: [33m0[37m/[33m0[37m[39m
+2025-01-24 18:56 +08:00: [35mhttp [39m[37m[32m<--[37m [33m304[37m, user: [1mnull[22m([32m192.168.10.51[37m), req: '[32mGET[37m [32m/[37m', bytes: [33m0[37m/[33m0[37m[39m
+2025-01-24 18:56 +08:00: [36minfo [39m[37m[32m<--[37m [32m192.168.10.51[37m requested '[32mGET[37m [32m/-/static/runtime.7e9c6d0c00f48bce0de4.js[37m'[39m
+2025-01-24 18:56 +08:00: [35mhttp [39m[37m[32m<--[37m [33m200[37m, user: [1mnull[22m([32m192.168.10.51[37m), req: '[32mGET[37m [32m/-/static/runtime.7e9c6d0c00f48bce0de4.js[37m', bytes: [33m0[37m/[33m0[37m[39m
+2025-01-24 18:56 +08:00: [36minfo [39m[37m[32m<--[37m [32m192.168.10.51[37m requested '[32mGET[37m [32m/-/static/vendors.7e9c6d0c00f48bce0de4.js[37m'[39m
+2025-01-24 18:56 +08:00: [35mhttp [39m[37m[32m<--[37m [33m200[37m, user: [1mnull[22m([32m192.168.10.51[37m), req: '[32mGET[37m [32m/-/static/vendors.7e9c6d0c00f48bce0de4.js[37m', bytes: [33m0[37m/[33m0[37m[39m
+2025-01-24 18:56 +08:00: [36minfo [39m[37m[32m<--[37m [32m192.168.10.51[37m requested '[32mGET[37m [32m/-/static/main.7e9c6d0c00f48bce0de4.js[37m'[39m
+2025-01-24 18:56 +08:00: [35mhttp [39m[37m[32m<--[37m [33m200[37m, user: [1mnull[22m([32m192.168.10.51[37m), req: '[32mGET[37m [32m/-/static/main.7e9c6d0c00f48bce0de4.js[37m', bytes: [33m0[37m/[33m0[37m[39m
+2025-01-24 18:56 +08:00: [35mhttp [39m[37m[32m<--[37m [33m304[37m, user: [1mnull[22m([32m192.168.10.51[37m), req: '[32mGET[37m [32m/-/static/runtime.7e9c6d0c00f48bce0de4.js[37m', bytes: [33m0[37m/[33m0[37m[39m
+2025-01-24 18:56 +08:00: [35mhttp [39m[37m[32m<--[37m [33m304[37m, user: [1mnull[22m([32m192.168.10.51[37m), req: '[32mGET[37m [32m/-/static/vendors.7e9c6d0c00f48bce0de4.js[37m', bytes: [33m0[37m/[33m0[37m[39m
+2025-01-24 18:56 +08:00: [35mhttp [39m[37m[32m<--[37m [33m304[37m, user: [1mnull[22m([32m192.168.10.51[37m), req: '[32mGET[37m [32m/-/static/main.7e9c6d0c00f48bce0de4.js[37m', bytes: [33m0[37m/[33m0[37m[39m
+2025-01-24 18:56 +08:00: [36minfo [39m[37m[32m<--[37m [32m192.168.10.51[37m requested '[32mGET[37m [32m/-/static/Home.7e9c6d0c00f48bce0de4.js[37m'[39m
+2025-01-24 18:56 +08:00: [35mhttp [39m[37m[32m<--[37m [33m200[37m, user: [1mnull[22m([32m192.168.10.51[37m), req: '[32mGET[37m [32m/-/static/Home.7e9c6d0c00f48bce0de4.js[37m', bytes: [33m0[37m/[33m0[37m[39m
+2025-01-24 18:56 +08:00: [35mhttp [39m[37m[32m<--[37m [33m304[37m, user: [1mnull[22m([32m192.168.10.51[37m), req: '[32mGET[37m [32m/-/static/Home.7e9c6d0c00f48bce0de4.js[37m', bytes: [33m0[37m/[33m0[37m[39m
+2025-01-24 18:56 +08:00: [36minfo [39m[37m[32m<--[37m [32m192.168.10.51[37m requested '[32mGET[37m [32m/-/verdaccio/data/packages[37m'[39m
+2025-01-24 18:56 +08:00: [35mhttp [39m[37m[32m<--[37m [33m200[37m, user: [1mnull[22m([32m192.168.10.51[37m), req: '[32mGET[37m [32m/-/verdaccio/data/packages[37m', bytes: [33m0[37m/[33m0[37m[39m
+2025-01-24 18:56 +08:00: [36minfo [39m[37m[34m---[37m auth/allow_action: access granted to: [90mundefined[37m[39m
+2025-01-24 18:56 +08:00: [36minfo [39m[37m[34m---[37m allowed access for [32m@lds/cef-bridge[37m[39m
+2025-01-24 18:56 +08:00: [36minfo [39m[37m[34m---[37m auth/allow_action: access granted to: [90mundefined[37m[39m
+2025-01-24 18:56 +08:00: [36minfo [39m[37m[34m---[37m allowed access for [32m@lds/webview-bridge[37m[39m
+2025-01-24 18:56 +08:00: [35mhttp [39m[37m[32m<--[37m [33m304[37m, user: [1mnull[22m([32m192.168.10.51[37m), req: '[32mGET[37m [32m/-/verdaccio/data/packages[37m', bytes: [33m0[37m/[33m0[37m[39m
+2025-01-24 18:56 +08:00: [36minfo [39m[37m[32m<--[37m [32m192.168.10.51[37m requested '[32mGET[37m [32m/-/static/favicon.ico[37m'[39m
+2025-01-24 18:56 +08:00: [35mhttp [39m[37m[32m<--[37m [33m200[37m, user: [1mnull[22m([32m192.168.10.51[37m), req: '[32mGET[37m [32m/-/static/favicon.ico[37m', bytes: [33m0[37m/[33m0[37m[39m
+2025-01-24 18:56 +08:00: [35mhttp [39m[37m[32m<--[37m [33m200[37m, user: [1mnull[22m([32m192.168.10.51[37m), req: '[32mGET[37m [32m/-/static/favicon.ico[37m', bytes: [33m0[37m/[33m2050[37m[39m
+2025-01-24 18:56 +08:00: [36minfo [39m[37m[34m---[37m config file  - [32mC:\Users\lds\Verdaccio\server\verdacciorc\config.yaml[37m[39m
+2025-01-24 18:56 +08:00: [36minfo [39m[37m[34m---[37m the "crypt" algorithm is deprecated consider switch to "bcrypt" in the configuration file. Read the documentation for additional details[39m
+2025-01-24 18:56 +08:00: [36minfo [39m[37m[34m---[37m using htpasswd file: [32mC:\Users\lds\Verdaccio\server\verdacciorc\htpasswd[37m[39m
+2025-01-24 18:56 +08:00: [36minfo [39m[37m[34m---[37m plugin successfully loaded: [32mverdaccio[37m-[32mhtpasswd[37m[39m
+2025-01-24 18:56 +08:00: [33mwarn [39m[37m[34m---[37m http address - [32mhttp://0.0.0.0:4000/[37m - [32mverdaccio/6.0.5[37m[39m
+2025-01-24 18:56 +08:00: [36minfo [39m[37m[32m<--[37m [32m192.168.10.51[37m requested '[32mGET[37m [32m/[37m'[39m
+2025-01-24 18:56 +08:00: [35mhttp [39m[37m[32m<--[37m [33m304[37m, user: [1mnull[22m([32m192.168.10.51[37m), req: '[32mGET[37m [32m/[37m', bytes: [33m0[37m/[33m0[37m[39m
+2025-01-24 18:56 +08:00: [35mhttp [39m[37m[32m<--[37m [33m304[37m, user: [1mnull[22m([32m192.168.10.51[37m), req: '[32mGET[37m [32m/[37m', bytes: [33m0[37m/[33m0[37m[39m
+2025-01-24 18:56 +08:00: [36minfo [39m[37m[32m<--[37m [32m192.168.10.51[37m requested '[32mGET[37m [32m/-/static/runtime.7e9c6d0c00f48bce0de4.js[37m'[39m
+2025-01-24 18:56 +08:00: [35mhttp [39m[37m[32m<--[37m [33m200[37m, user: [1mnull[22m([32m192.168.10.51[37m), req: '[32mGET[37m [32m/-/static/runtime.7e9c6d0c00f48bce0de4.js[37m', bytes: [33m0[37m/[33m0[37m[39m
+2025-01-24 18:56 +08:00: [36minfo [39m[37m[32m<--[37m [32m192.168.10.51[37m requested '[32mGET[37m [32m/-/static/vendors.7e9c6d0c00f48bce0de4.js[37m'[39m
+2025-01-24 18:56 +08:00: [35mhttp [39m[37m[32m<--[37m [33m200[37m, user: [1mnull[22m([32m192.168.10.51[37m), req: '[32mGET[37m [32m/-/static/vendors.7e9c6d0c00f48bce0de4.js[37m', bytes: [33m0[37m/[33m0[37m[39m
+2025-01-24 18:56 +08:00: [36minfo [39m[37m[32m<--[37m [32m192.168.10.51[37m requested '[32mGET[37m [32m/-/static/main.7e9c6d0c00f48bce0de4.js[37m'[39m
+2025-01-24 18:56 +08:00: [35mhttp [39m[37m[32m<--[37m [33m200[37m, user: [1mnull[22m([32m192.168.10.51[37m), req: '[32mGET[37m [32m/-/static/main.7e9c6d0c00f48bce0de4.js[37m', bytes: [33m0[37m/[33m0[37m[39m
+2025-01-24 18:56 +08:00: [35mhttp [39m[37m[32m<--[37m [33m304[37m, user: [1mnull[22m([32m192.168.10.51[37m), req: '[32mGET[37m [32m/-/static/runtime.7e9c6d0c00f48bce0de4.js[37m', bytes: [33m0[37m/[33m0[37m[39m
+2025-01-24 18:56 +08:00: [35mhttp [39m[37m[32m<--[37m [33m304[37m, user: [1mnull[22m([32m192.168.10.51[37m), req: '[32mGET[37m [32m/-/static/vendors.7e9c6d0c00f48bce0de4.js[37m', bytes: [33m0[37m/[33m0[37m[39m
+2025-01-24 18:56 +08:00: [35mhttp [39m[37m[32m<--[37m [33m304[37m, user: [1mnull[22m([32m192.168.10.51[37m), req: '[32mGET[37m [32m/-/static/main.7e9c6d0c00f48bce0de4.js[37m', bytes: [33m0[37m/[33m0[37m[39m
+2025-01-24 18:56 +08:00: [36minfo [39m[37m[32m<--[37m [32m192.168.10.51[37m requested '[32mGET[37m [32m/-/static/Home.7e9c6d0c00f48bce0de4.js[37m'[39m
+2025-01-24 18:56 +08:00: [35mhttp [39m[37m[32m<--[37m [33m200[37m, user: [1mnull[22m([32m192.168.10.51[37m), req: '[32mGET[37m [32m/-/static/Home.7e9c6d0c00f48bce0de4.js[37m', bytes: [33m0[37m/[33m0[37m[39m
+2025-01-24 18:56 +08:00: [35mhttp [39m[37m[32m<--[37m [33m304[37m, user: [1mnull[22m([32m192.168.10.51[37m), req: '[32mGET[37m [32m/-/static/Home.7e9c6d0c00f48bce0de4.js[37m', bytes: [33m0[37m/[33m0[37m[39m
+2025-01-24 18:56 +08:00: [36minfo [39m[37m[32m<--[37m [32m192.168.10.51[37m requested '[32mGET[37m [32m/-/verdaccio/data/packages[37m'[39m
+2025-01-24 18:56 +08:00: [35mhttp [39m[37m[32m<--[37m [33m200[37m, user: [1mnull[22m([32m192.168.10.51[37m), req: '[32mGET[37m [32m/-/verdaccio/data/packages[37m', bytes: [33m0[37m/[33m0[37m[39m
+2025-01-24 18:56 +08:00: [36minfo [39m[37m[32m<--[37m [32m192.168.10.51[37m requested '[32mGET[37m [32m/-/static/favicon.ico[37m'[39m
+2025-01-24 18:56 +08:00: [35mhttp [39m[37m[32m<--[37m [33m200[37m, user: [1mnull[22m([32m192.168.10.51[37m), req: '[32mGET[37m [32m/-/static/favicon.ico[37m', bytes: [33m0[37m/[33m0[37m[39m
+2025-01-24 18:56 +08:00: [35mhttp [39m[37m[32m<--[37m [33m200[37m, user: [1mnull[22m([32m192.168.10.51[37m), req: '[32mGET[37m [32m/-/static/favicon.ico[37m', bytes: [33m0[37m/[33m2050[37m[39m
+2025-01-24 18:56 +08:00: [31merror[39m[37m[34m---[37m forbidden access for [32m@lds/cef-bridge[37m. Error: [32mauthorization required to access package @lds/cef-bridge[37m[39m
+2025-01-24 18:56 +08:00: [31merror[39m[37m[34m---[37m forbidden access for [32m@lds/webview-bridge[37m. Error: [32mauthorization required to access package @lds/webview-bridge[37m[39m
+2025-01-24 18:56 +08:00: [35mhttp [39m[37m[32m<--[37m [33m200[37m, user: [1mnull[22m([32m192.168.10.51[37m), req: '[32mGET[37m [32m/-/verdaccio/data/packages[37m', bytes: [33m0[37m/[33m3[37m[39m
+2025-01-24 18:56 +08:00: [36minfo [39m[37m[32m<--[37m [32m192.168.10.51[37m requested '[32mPOST[37m [32m/-/verdaccio/sec/login[37m'[39m
+2025-01-24 18:56 +08:00: [35mhttp [39m[37m[32m<--[37m [33m200[37m, user: [1mnull[22m([32m192.168.10.51[37m), req: '[32mPOST[37m [32m/-/verdaccio/sec/login[37m', bytes: [33m39[37m/[33m0[37m[39m
+2025-01-24 18:56 +08:00: [35mhttp [39m[37m[32m<--[37m [33m200[37m, user: [32mlds-wly[37m([32m192.168.10.51[37m), req: '[32mPOST[37m [32m/-/verdaccio/sec/login[37m', bytes: [33m39[37m/[33m351[37m[39m
+2025-01-24 18:56 +08:00: [36minfo [39m[37m[32m<--[37m [32m192.168.10.51[37m requested '[32mGET[37m [32m/-/verdaccio/data/packages[37m'[39m
+2025-01-24 18:56 +08:00: [35mhttp [39m[37m[32m<--[37m [33m200[37m, user: [32mlds-wly[37m([32m192.168.10.51[37m), req: '[32mGET[37m [32m/-/verdaccio/data/packages[37m', bytes: [33m0[37m/[33m0[37m[39m
+2025-01-24 18:56 +08:00: [36minfo [39m[37m[34m---[37m auth/allow_action: access granted to: [32mlds-wly[37m[39m
+2025-01-24 18:56 +08:00: [36minfo [39m[37m[34m---[37m allowed access for [32m@lds/cef-bridge[37m[39m
+2025-01-24 18:56 +08:00: [36minfo [39m[37m[34m---[37m auth/allow_action: access granted to: [32mlds-wly[37m[39m
+2025-01-24 18:56 +08:00: [36minfo [39m[37m[34m---[37m allowed access for [32m@lds/webview-bridge[37m[39m
+2025-01-24 18:56 +08:00: [35mhttp [39m[37m[32m<--[37m [33m200[37m, user: [32mlds-wly[37m([32m192.168.10.51[37m), req: '[32mGET[37m [32m/-/verdaccio/data/packages[37m', bytes: [33m0[37m/[33m1137[37m[39m

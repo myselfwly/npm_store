@@ -1,0 +1,100 @@
+.el-header {
+  background-color: #409EFF;
+  color: white;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: 0 20px;
+}
+
+.header-title h2 {
+  margin: 0;
+}
+
+.header-controls {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+}
+
+.el-aside {
+  background-color: #f5f7fa;
+  border-right: 1px solid #e6e6e6;
+}
+
+.el-main {
+  padding: 20px;
+}
+
+.server-status {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+}
+
+.search-bar {
+  margin-bottom: 20px;
+}
+
+.table-operations {
+  margin-left: 10px;
+}
+
+.el-tag+.el-tag {
+  margin-left: 10px;
+}
+
+.button-new-tag {
+  margin-left: 10px;
+  height: 32px;
+  line-height: 30px;
+  padding-top: 0;
+  padding-bottom: 0;
+}
+
+.input-new-tag {
+  width: 90px;
+  margin-left: 10px;
+  vertical-align: bottom;
+}
+
+.form-item {
+  margin-bottom: 20px;
+}
+
+.dialog-footer {
+  text-align: right;
+}
+
+.mr-1 {
+  margin-right: 5px;
+}
+
+.text-muted {
+  color: #909399;
+}
+
+/* 表格内的标签样式 */
+.el-table .el-tag {
+  margin: 2px;
+}
+
+/* 弹窗表单样式 */
+.el-dialog .el-form {
+  padding: 20px 0;
+}
+
+/* 按钮组样式 */
+.el-button-group {
+  margin-left: 10px;
+}
+
+/* 表格操作列样式 */
+.el-table .el-button--small {
+  padding: 7px 12px;
+}
+
+/* 搜索框样式 */
+.el-input-group__prepend {
+  background-color: #f5f7fa;
+}

@@ -1,0 +1,85 @@
+{
+	"name": "@lds/cef-bridge",
+	"versions": {
+		"1.13.11": {
+			"version": "1.13.11",
+			"description": "cef-bridge 用于前端跟客户端通信的桥接库",
+			"license": "MIT",
+			"main": "dist/index.js",
+			"module": "dist/cef-bridge.esm.js",
+			"typings": "dist/index.d.ts",
+			"files": [
+				"dist",
+				"src"
+			],
+			"sideEffects": false,
+			"engines": {
+				"node": ">=12"
+			},
+			"scripts": {
+				"start": "tsdx watch",
+				"build": "tsdx build --target browser --format cjs,esm,umd",
+				"upload": "lop upload",
+				"rule-test": "lop test",
+				"test": "tsdx test",
+				"lint": "tsdx lint src"
+			},
+			"name": "@lds/cef-bridge",
+			"author": {
+				"name": "ChiaJune"
+			},
+			"repository": {
+				"type": "git",
+				"url": "git@codeup.aliyun.com:master/lib_common/front_end/cef-bridge.git"
+			},
+			"dependencies": {
+				"nanoid": "^3.3.4"
+			},
+			"devDependencies": {
+				"@lds/upload": "^1.3.2",
+				"tsdx": "^0.14.1",
+				"tslib": "^2.4.0",
+				"typescript": "^4.7.2"
+			},
+			"browserslist": {
+				"production": [
+					"chrome >= 49"
+				],
+				"development": [
+					"chrome >= 49"
+				]
+			},
+			"_id": "@lds/cef-bridge@1.13.11",
+			"readmeFilename": "README.md",
+			"gitHead": "7828391c86e6104ad0ff1ef7a28dedb873aa9f6c",
+			"_nodeVersion": "18.20.5",
+			"_npmVersion": "10.8.2",
+			"dist": {
+				"integrity": "sha512-Pn2tM+epKGGmDnZ7bwNKOiRmZ/5ZlmqvimlfcPGvbHEBUOB5PBLqYNQq2dYPzhGfrds4BLiz7edrmsi7uDJjew==",
+				"shasum": "a724d61d620b5de37a1684e566b6e4816499ce49",
+				"tarball": "http://192.168.10.51:4000/@lds/cef-bridge/-/@lds/cef-bridge-1.13.11.tgz"
+			},
+			"contributors": []
+		}
+	},
+	"time": {
+		"modified": "2025-01-23T11:56:55.663Z",
+		"created": "2025-01-23T11:56:55.663Z",
+		"1.13.11": "2025-01-23T11:56:55.663Z"
+	},
+	"users": {},
+	"dist-tags": {
+		"latest": "1.13.11"
+	},
+	"_uplinks": {},
+	"_distfiles": {},
+	"_attachments": {
+		"cef-bridge-1.13.11.tgz": {
+			"shasum": "a724d61d620b5de37a1684e566b6e4816499ce49",
+			"version": "1.13.11"
+		}
+	},
+	"_rev": "3-fd29e5716b02d293",
+	"_id": "@lds/cef-bridge",
+	"readme": "# cef-bridge\r\n\r\n该 lib 依赖 cef 环境，用于前端跟客户端通信\r\n\r\n[客户端文档](https://codeup.aliyun.com/master/lib_common/js_basic/blob/master/doc/web_interaction_interface.md)\r\n\r\n**注意：** 有些客户端方法并没有在 `cef-bridge` 中实现\r\n\r\n## 安装\r\n\r\n### git+ssh://\r\n\r\n```bash\r\nyarn add git+ssh://git@codeup.aliyun.com:master/lib_common/front_end/cef-bridge.git\r\n# 或者\r\n# npm install git+ssh://git@codeup.aliyun.com:master/lib_common/front_end/cef-bridge.git\r\n```\r\n\r\n### 私有 NPM，这种方式暂不更新维护\r\n\r\n```bash\r\nyarn add @lds/cef-bridge\r\n# 或者\r\n# npm install @lds/cef-bridge\r\n```\r\n\r\n## 兼容性\r\n\r\n因为客户端 `cef` 版本限制（Chrom 49），所以 `cef-bridge` 仅支持 `Chrome >= 49`\r\n\r\n## 使用\r\n\r\n### import 方式使用\r\n\r\n```js\r\nimport { CefGetBaseData, CefEventNotify } from '@lds/cef-bridge';\r\n\r\n// 调用客户端方法\r\nCefGetBaseData().then(res => {\r\n  console.log(res);\r\n});\r\n\r\n// 监听通知\r\nCefEventNotify((name: string, json: string) => {\r\n  if (name === 'MainWebWndCreated') {\r\n    console.log(json);\r\n  }\r\n});\r\n```\r\n\r\n### 使用 script 引入的方式\r\n\r\n```html\r\n<script src=\"./dist/cef-bridge.umd.production.min.js\"></script>\r\n<script>\r\n  const oBtn = document.getElementById('btn');\r\n  oBtn.addEventListener(\r\n    'click',\r\n    function() {\r\n      cefBridge.CefCloseWnd();\r\n    },\r\n    false\r\n  );\r\n</script>\r\n```\r\n\r\n### 使用 script 引用 cdn 链接\r\n\r\n现在 `cef-bridge` 的打包文件已经上传到阿里云 OSS 上，目录为 `lds-file/pc-web/cef_bridge/`。\r\n打包的时候使用的是 [@lds/upload](http://gitlab-inc.ludashi.com/fxd-utils/oss-upload) 进行在 jenkins 环境上传。cdn 上 `cef-bridge` 是按照版本保存，主要为了防止因为代码覆盖导致其他项目发生线上 bug， 形如：`/cef_bridge/v1.12.0/**.min.js`。\r\n\r\n使用方式如下：\r\n\r\n```html\r\n<script src=\"https://cdn-file.ludashi.com/pc-web/cef_bridge/v1.12.0/cef-bridge.umd.production.min.js\"></script>\r\n<script>\r\n  const oBtn = document.getElementById('btn');\r\n  oBtn.addEventListener(\r\n    'click',\r\n    function() {\r\n      cefBridge.CefCloseWnd();\r\n    },\r\n    false\r\n  );\r\n</script>\r\n```\r\n\r\n## cef-bridge 开发流程\r\n\r\n任何功能的新增和 bug 的修复，都需要从 `master` 切换新的分支，在新的分支上开发或修复 bug，开发完成/修复完成再合并到 `master` 分支进行发布，**务必保证 `master` 分支的代码是最新的**。\r\n\r\n1. 拉取代码到本地\r\n2. 从 `master` 分支切换新的分支 `feat/xxxx` 或 `hotfix/xxxx` 等进行开发\r\n3. 开发完成/修复完成后在当前分支执行`版本更新`，详细操作见下面**版本更新**\r\n4. 将当前分支进行推送`git push --follow-tags`\r\n5. 在 codeup 上发起 `merge request`，等待管理员合并\r\n\r\n## 版本更新\r\n\r\n建议使用 `yarn version --new-version [version] --message '[message]'` 的形式来进行版本的升级(附带自动 `git tag`)\r\n详细操作可查看: [yarn version](https://yarn.bootcss.com/docs/cli/version/) 文档\r\n\r\n```bash\r\nyarn version --major # 不兼容性更新（一般是进行比较大重构，许多api不能向下兼容） 如： 1.2.0 -> 2.0.0\r\nyarn version --minor # 功能性更新（一般是增加了新功能） 如：1.2.0 -> 1.3.0\r\nyarn version --patch # 修复性更新（一般是修复什么bug，或者一些小的改动） 如：1.2.0 -> 1.2.1\r\n```\r\n"
+}
