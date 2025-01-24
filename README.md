@@ -1,19 +1,16 @@
 # 环境准备
 
 1. 安装nodejs
-```
-npm install -g n
-n lts
-```
-2. 安装pm2
+[nodejs](https://nodejs.org/zh-cn/)
+1. 安装pm2
 ```
 npm install -g pm2
 ```
-3. 安装pm2-windows-service
+1. 安装pm2-windows-service
 ```
 npm install -g pm2-windows-service
 ```
-4. 注册pm2-windows-service
+1. 注册pm2-windows-service
 ```
 pm2-startup install
 ```
